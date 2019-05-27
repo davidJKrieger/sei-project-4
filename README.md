@@ -1,6 +1,6 @@
 # sei-project-4
 
-## What’s for dinner
+## What’s For Dinner
 
 ### A full-stack two-model C.R.U.D. app built with Ruby and Sinatra
 
