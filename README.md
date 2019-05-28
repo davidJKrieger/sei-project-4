@@ -28,3 +28,7 @@ a useful app for times when a user is too busy to plan dinner and wants to see a
 
 #### Possible Future developments
 allow the user to select meals based on ingredients that they have, or add a calendar feature to plan more meals for different days.
+
+### Data Tables
+user has many ingredients through meals
+ingredient has many users through meals
