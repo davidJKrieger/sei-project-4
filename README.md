@@ -22,9 +22,9 @@
   ###### - there is a button to generate another dinner idea.
   ###### - there is a button to see all the dinner options.
 ##### When the user clicks add a dinner, they are given a form to 
-  ###### - add a meal, 
+  ###### - add a meal 
   ###### - add recipe url
-  ###### - add ingredients.
+  ###### - add ingredients
 
 #### M.V.P. 
 a useful app for times when a user is too busy to plan dinner and wants to see a random meal, ingredients and link to a recipe.
