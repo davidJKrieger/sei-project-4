@@ -6,22 +6,22 @@
 
 #### User Story
 User can:
-login or register
-add, edit and delete meals in a database
-see a list of meals
-see a list of ingredients for all of the meals
-see the ingredients for one meal
-add edit and delete ingredients in a database
-see a random meal and its ingredients
+- login or register
+- add, edit and delete meals in a database
+- see a list of meals
+- see a list of ingredients for all of the meals
+- see the ingredients for one meal
+- add edit and delete ingredients in a database
+- see a random meal and its ingredients
 
 when the user logs in, they see a button called "what's for dinner" and a button for "add a dinner"
 
 when the user clicks "what's for dinner, 
-  they are taken to a dinner show page that shows an image, recipe url, and ingredients. 
-  there is a button to generate another dinner idea
-  there is a button to see all the dinner options
+  - they are taken to a dinner show page that shows an image, recipe url, and ingredients. 
+  - there is a button to generate another dinner idea
+  - there is a button to see all the dinner options
 when the user clicks add a dinner,
-  they are given a form to add a dinner, recipe url, and ingredients.
+  - they are given a form to add a dinner, recipe url, and ingredients.
 
 #### M.V.P. 
 a useful app for times when a user is too busy to plan dinner and wants to see a random meal, ingredients and link to a recipe.
