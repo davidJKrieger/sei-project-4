@@ -17,7 +17,7 @@
 
 ##### When the user logs in, they see a button called "what's for dinner" and a button for "add a dinner"
 
-##### When the user clicks "what's for dinner, 
+##### When the user clicks "what's for dinner", 
   ###### - they are taken to a dinner show page that shows an image, recipe url, and ingredients. 
   ###### - there is a button to generate another dinner idea.
   ###### - there is a button to see all the dinner options.
