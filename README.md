@@ -15,13 +15,13 @@ User can:
 - see all the ingredients for one user
 - see a random meal and its ingredients
 
-######when the user logs in, they see a button called "what's for dinner" and a button for "add a dinner"
+###### when the user logs in, they see a button called "what's for dinner" and a button for "add a dinner"
 
-######when the user clicks "what's for dinner, 
+###### when the user clicks "what's for dinner, 
   - they are taken to a dinner show page that shows an image, recipe url, and ingredients. 
   - there is a button to generate another dinner idea.
   - there is a button to see all the dinner options.
-######when the user clicks add a dinner, they are given a form to 
+###### when the user clicks add a dinner, they are given a form to 
   - add a meal, 
   - add recipe url
   - add ingredients.
