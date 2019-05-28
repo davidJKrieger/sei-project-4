@@ -27,7 +27,7 @@
   ###### - add ingredients
 
 #### M.V.P. 
-a useful app for times when a user is too busy to plan dinner and wants to see a random meal, ingredients and link to a recipe.
+a useful app for times when you are too busy to plan dinner and want to see a random meal, ingredients and link to a recipe.
 
 #### Possible Future developments
 allow the user to select meals based on ingredients that they have, or add a calendar feature to plan more meals for different days.
