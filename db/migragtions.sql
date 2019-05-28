@@ -19,7 +19,8 @@ CREATE TABLE ingredients(
     id SERIAL PRIMARY KEY,
     ingredient_name VARCHAR(255),
     ing_img_url VARCHAR(255),
-    meal_id INTEGER REFERENCES meals(id)
+    ing_desc VARCHAR(255), 
+    meal_id INTEGER REFERENCES meals(id),
 );
 
 CREATE TABLE recipe(
