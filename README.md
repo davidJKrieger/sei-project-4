@@ -12,7 +12,7 @@ User can:
 - see a list of meals
 - see a list of ingredients for all of the meals
 - see the ingredients for one meal
-- add edit and delete ingredients in a database
+- see all the ingredients for one user
 - see a random meal and its ingredients
 
 when the user logs in, they see a button called "what's for dinner" and a button for "add a dinner"
