@@ -15,16 +15,16 @@ User can:
 - see all the ingredients for one user
 - see a random meal and its ingredients
 
-###### when the user logs in, they see a button called "what's for dinner" and a button for "add a dinner"
+##### when the user logs in, they see a button called "what's for dinner" and a button for "add a dinner"
 
-###### when the user clicks "what's for dinner, 
-  - they are taken to a dinner show page that shows an image, recipe url, and ingredients. 
-  - there is a button to generate another dinner idea.
-  - there is a button to see all the dinner options.
-###### when the user clicks add a dinner, they are given a form to 
-  - add a meal, 
-  - add recipe url
-  - add ingredients.
+##### when the user clicks "what's for dinner, 
+  ###### - they are taken to a dinner show page that shows an image, recipe url, and ingredients. 
+  ###### - there is a button to generate another dinner idea.
+  ###### - there is a button to see all the dinner options.
+##### when the user clicks add a dinner, they are given a form to 
+  ###### - add a meal, 
+  ###### - add recipe url
+  ###### - add ingredients.
 
 #### M.V.P. 
 a useful app for times when a user is too busy to plan dinner and wants to see a random meal, ingredients and link to a recipe.
@@ -33,5 +33,5 @@ a useful app for times when a user is too busy to plan dinner and wants to see a
 allow the user to select meals based on ingredients that they have, or add a calendar feature to plan more meals for different days.
 
 ### Data Tables
-- user has many ingredients through meals
-- ingredient has many users through meals
+###### - user has many ingredients through meals
+###### - ingredient has many users through meals
