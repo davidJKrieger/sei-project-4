@@ -7,12 +7,16 @@ require './controllers/ApplicationController'
 require './models/UserModel'
 require './models/Meal'
 
-map '/users' do
-  run UserController  
-end
+map ('/') {
+  run ApplicationController
+}
+map ('/users') {
+  run UserController
+}
 
-map '/meals' do
+
+map ('/meals') {
   run MealController
 
-end
+}
 
