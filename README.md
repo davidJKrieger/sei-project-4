@@ -8,6 +8,7 @@
 User can:
 - login or register
 - add, edit and delete meals in a database
+- add, edit and delete ingredients in a database
 - see a list of meals
 - see a list of ingredients for all of the meals
 - see the ingredients for one meal
