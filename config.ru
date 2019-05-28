@@ -1,10 +1,18 @@
 require 'sinatra/base'
 
 require './controllers/UserController'
+require './controllers/ApplicationController'
 
 
 require './models/UserModel'
+require './models/Meal'
 
-map '/api/v1/users' do
+map '/users' do
   run UserController  
 end
+
+map '/meals' do
+  run MealController
+
+end
+
