@@ -1,11 +1,14 @@
 require 'sinatra/base'
 
-require './controllers/UserController'
 require './controllers/ApplicationController'
+require './controllers/UserController'
+
+
 
 
 require './models/UserModel'
 require './models/Meal'
+require './models/Ingredient'
 
 map ('/') {
   run ApplicationController
@@ -15,8 +18,7 @@ map ('/users') {
 }
 
 
-map ('/meals') {
-  run MealController
+# map ('/meals') {
+#   run MealController
 
-}
-
+# }
