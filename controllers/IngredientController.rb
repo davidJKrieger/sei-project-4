@@ -63,3 +63,4 @@ class IngredientController < ApplicationController
     
         ing.destroy
     end
+end
