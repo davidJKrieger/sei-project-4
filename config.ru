@@ -20,10 +20,5 @@ map ('/users') {
 
 # map ('/meals') {
 #   run MealController
-<<<<<<< HEAD
-=======
-
-# }
->>>>>>> 63287849b2a6bb0642e2ec85085ab39f85f7c263
 
 # }
