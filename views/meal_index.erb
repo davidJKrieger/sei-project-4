@@ -2,7 +2,7 @@
 <ul>
 <% @meals.each do |meal| %>
    <li>
-   <%= meal %>
+   <%= meal.meal_name %>
         <form action="/meals/<%= meal.id %>/edit">
             
             <button>Edit</button>

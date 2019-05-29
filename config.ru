@@ -7,6 +7,7 @@ require './controllers/IngredientController'
 require './models/User'
 require './models/Meal'
 require './models/Ingredient'
+require './models/recipe'
 
 
 map ('/') {

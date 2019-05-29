@@ -2,11 +2,11 @@
 <ul>
 <% @ing.each do |ingredient| %>
    <li>
-   <%= ingredient %>
-        <form action="/ingredients/<%= ingredient.id %>/edit">
+   <%= ingredient.ingredient_name %>
+
            
-            <button>Edit</button>
-        </form>
+    <a href="/ingredients/<%= ingredient.id %>/edit"><button>Edit</button></a>
+    
         <form action="/ingredients/<%= ingredient.id %>" method="POST">
             <input type="hidden" name="_method" value="DELETE">
             <button>Delete</button>
