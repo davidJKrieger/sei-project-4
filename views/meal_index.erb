@@ -1,0 +1,15 @@
+<h1>Here is a list of all of the Meals</h1>
+<ul>
+<% @meals.each do |meal| %>
+   <li>
+   <%= meal %>
+        <form action="/ingredients/<%= meal.id %>/edit">
+            <input type="submit"  value="EDIT">
+            <button>Edit</button>
+        </form>
+        <form action="/ingredients/<%= meal.id %>" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <button>Delete</button>
+        </form>
+   </li>
+   <% end %>

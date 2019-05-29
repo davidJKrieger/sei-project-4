@@ -4,9 +4,9 @@ CREATE DATABASE whats_for_dinner;
 \c whats_for_dinner
 
 CREATE TABLE users(
-    id SERIAL PRIMARY KEY,
-    username VARCHAR(32),
-    password_digest VARCHAR(60)
+  id SERIAL PRIMARY KEY,
+  username VARCHAR(32),
+  password_digest VARCHAR(60)
 );
 
 CREATE TABLE meals(
@@ -22,11 +22,11 @@ CREATE TABLE ingredients(
     ingredient_name VARCHAR(255),
     ing_img_url VARCHAR(255),
     ing_desc VARCHAR(255), 
-    meal_id INTEGER REFERENCES meals(id),
+    meal_id INTEGER REFERENCES meals(id)
 );
 
 CREATE TABLE recipe(
-    id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY, 
     meal_id INTEGER REFERENCES meals(id),
     ingredient_id INTEGER REFERENCES ingredients(id),
     quantity INTEGER REFERENCES ingredients(id)

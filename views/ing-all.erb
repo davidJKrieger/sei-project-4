@@ -1,0 +1,16 @@
+<h1>Here is a list of all of the Ingredients</h1>
+<ul>
+<% @ing.each do |ingredient| %>
+   <li>
+   <%= ingredient %>
+        <form action="/ingredients/<%= ingredient.id %>/edit">
+            <input type="submit"  value="EDIT">
+            <button>Edit</button>
+        </form>
+        <form action="/ingredients/<%= ingredient.id %>" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <button>Delete</button>
+        </form>
+   </li>
+   <% end %>
+</ul>
