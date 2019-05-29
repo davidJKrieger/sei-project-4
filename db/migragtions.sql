@@ -14,7 +14,6 @@ CREATE TABLE meals(
     meal_name VARCHAR(255),
     recipe_link_url VARCHAR(255),
     meal_img_url VARCHAR(255),
-    user_id INTEGER REFERENCES users(id)
 );
 
 CREATE TABLE ingredients(
@@ -22,14 +21,17 @@ CREATE TABLE ingredients(
     ingredient_name VARCHAR(255),
     ing_img_url VARCHAR(255),
     ing_desc VARCHAR(255), 
-    meal_id INTEGER REFERENCES meals(id)
 );
 
 CREATE TABLE recipes(
     id SERIAL PRIMARY KEY, 
+    quantity VARCHAR(255),
+    --a recipe belongs to a meal
+    --a dinner has many recipes
     meal_id INTEGER REFERENCES meals(id),
-    ingredient_id INTEGER REFERENCES ingredients(id),
-    quantity INTEGER REFERENCES ingredients(id)
+    --a recipe belongs to an ingredient
+    --an ingredient has many recipes
+    ingredient_id INTEGER REFERENCES ingredients(id),   
 );
 
 

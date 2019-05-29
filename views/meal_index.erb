@@ -3,11 +3,11 @@
 <% @meals.each do |meal| %>
    <li>
    <%= meal %>
-        <form action="/ingredients/<%= meal.id %>/edit">
+        <form action="/meals/<%= meal.id %>/edit">
             
             <button>Edit</button>
         </form>
-        <form action="/ingredients/<%= meal.id %>" method="POST">
+        <form action="/meals/<%= meal.id %>" method="POST">
             <input type="hidden" name="_method" value="DELETE">
             <button>Delete</button>
         </form>
