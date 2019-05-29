@@ -19,9 +19,14 @@ class ApplicationController < Sinatra::Base
   # set :public_dir, File.expand_path('../../public', __FILE__)
 
   get '/' do 
-      "here I am!"
-    # redirect '/meals'
+    "here it is"
+    # user = User.find_by({ :username => session[:username] })
+    # @meals = user.meals
+
+    # erb :meal_index
   end
+     
+
 
   get '/test' do
     some_text = "TEST 123"
@@ -29,6 +34,7 @@ class ApplicationController < Sinatra::Base
     "pry has finished -- here's some_text #{some_text}"
 
   end
+
 
   get '*' do
   halt 404

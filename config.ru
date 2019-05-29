@@ -6,7 +6,7 @@ require './controllers/UserController'
 
 
 
-require './models/UserModel'
+require './models/User'
 require './models/Meal'
 require './models/Ingredient'
 
