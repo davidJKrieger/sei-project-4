@@ -2,14 +2,14 @@ class IngredientController < ApplicationController
 
 #Index: All of the ingredients for all users and recipes 
 get '/' do
-    @ingredients = Ingredient.all
+    @ing = Ingredient.all
 
     erb :ing_all
 end
 
 #show an ingredient
 get '/:id' do
-    @ingredient = Ingredient.find params [:id]
+    @ing = Ingredient.find params [:id]
     
     erb :ing_show
 end
@@ -36,7 +36,7 @@ end
 #edit an ingredient
 get '/:id/edit' do
 
-    @ingredient = Ingredient.find params [:id]
+    @ing = Ingredient.find params [:id]
 
     erb :ing_edit
 end
