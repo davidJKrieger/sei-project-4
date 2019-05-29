@@ -19,5 +19,5 @@ map ('/meals') {
   run MealController
 }
 map ('/ingredients') {
-  run ingredientController
+  run IngredientController
 }

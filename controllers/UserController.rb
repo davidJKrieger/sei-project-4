@@ -30,7 +30,7 @@ class UserController < ApplicationController
         message: "Logged in as #{user.username}"
       }
       # redirect to /items
-      redirect '/items'
+      redirect '/meals'
 
     # else 
     else
@@ -85,7 +85,7 @@ class UserController < ApplicationController
       }
 
       # redirect to the site
-      redirect '/items'
+      redirect '/meals'
 
     # else if user does exist
     else 

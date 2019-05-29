@@ -19,11 +19,10 @@ class ApplicationController < Sinatra::Base
   # set :public_dir, File.expand_path('../../public', __FILE__)
 
   get '/' do 
-    "here it is"
-    # user = User.find_by({ :username => session[:username] })
-    # @meals = user.meals
-
-    # erb :meal_index
+  
+    meals = Meal.all
+     @meals = meals
+      erb :meal_index
   end
      
 

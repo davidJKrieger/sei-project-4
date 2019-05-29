@@ -18,7 +18,7 @@ class MealController < ApplicationController
   end
 
   get '/meals' do
-    "Hello from meals"
+    erb :meal_index.erb
 
 
   end

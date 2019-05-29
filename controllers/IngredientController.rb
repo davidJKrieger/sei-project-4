@@ -6,6 +6,12 @@ class IngredientController < ApplicationController
     
         erb :ing_all
     end
+
+    get '/new' do
+        
+        erb :ing_new
+        
+    end
     
     #show an ingredient
     get '/:id' do
@@ -15,20 +21,16 @@ class IngredientController < ApplicationController
     end
     
     #add an ingredient
-    get '/new' do
-        
-        erb :ing_new
-        
-    end
+
     
     #post ingredient
     post '/' do
     
         new_ing = Ingredient.new
     
-        new_ing.name = params[:name]
-        new_ing.img_url = params[:img_url]
-        new_ing.img_desc = params[:img_desc]
+        new_ing.name = params[:ingredient_name]
+        new_ing.img_url = params[:ing_img_url]
+        new_ing.img_desc = params[:ing_desc]
     
         new_ing.save
     end
@@ -62,5 +64,6 @@ class IngredientController < ApplicationController
         ing = Ingredient.find params[:id]
     
         ing.destroy
+        redirect '/ingredients'
     end
 end
