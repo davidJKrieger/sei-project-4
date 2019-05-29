@@ -1,4 +1,4 @@
-class RecipesController < ApplicationController
+class RecipeController < ApplicationController
   before_action :require_login
   before_action :authorized?
   before_action :find_recipe_by_id, only: [:show, :edit, :update, :destroy]
@@ -23,7 +23,7 @@ class RecipesController < ApplicationController
         flash.now[:danger] = "Failed to Update Recipe!"
         erb :edit
       end
-   
+    end
   end
 
   def destroy
