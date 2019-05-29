@@ -15,19 +15,15 @@ class ApplicationController < Sinatra::Base
   
   set :views, File.expand_path('../../views', __FILE__)
 
-  # # teach it how to find static assets
-  # set :public_dir, File.expand_path('../../public', __FILE__)
+  # teach it how to find static assets
+  set :public_dir, File.expand_path('../../public', __FILE__)
 
   get '/' do 
     erb :home
   
-    #  meals = Meal.all
-    #  @meals = meals
-    #   erb :meal_index
+  
   end
-     
-
-
+ 
   get '/test' do
     some_text = "TEST 123"
     binding.pry 

@@ -21,15 +21,13 @@ CREATE TABLE ingredients(
     id SERIAL PRIMARY KEY,
     ingredient_name VARCHAR(255),
     ing_img_url VARCHAR(255),
-    ing_desc VARCHAR(255), 
-    meal_id INTEGER REFERENCES meals(id)
+    ing_desc VARCHAR(255)
 );
 
 CREATE TABLE recipes(
     id SERIAL PRIMARY KEY, 
     meal_id INTEGER REFERENCES meals(id),
     ingredient_id INTEGER REFERENCES ingredients(id),
-    quantity INTEGER REFERENCES ingredients(id)
+    quantity VARCHAR(64)
 );
-
 

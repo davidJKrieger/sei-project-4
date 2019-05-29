@@ -9,7 +9,7 @@ class RecipeController < ApplicationController
   end
 
   def create
-    @recipe = current_user.recipes.build(recipe_params)
+    @recipe = current_user.recipes #.build(recipe_params)
      @recipe.save
      redirect '/meals'
  
@@ -17,8 +17,8 @@ class RecipeController < ApplicationController
 
  def update
     if @recipe.user_id == current_user.id
-      if @recipe.update(recipe_params)
-        flash[:primary] = "Recipe Info Updated!"
+      if @recipe #.update(recipe_params)
+        # flash[:primary] = "Recipe Info Updated!"
         else
         flash.now[:danger] = "Failed to Update Recipe!"
         erb :edit
