@@ -14,20 +14,32 @@ CREATE TABLE meals(
     meal_name VARCHAR(255),
     recipe_link_url VARCHAR(255),
     meal_img_url VARCHAR(255),
-    user_id INTEGER REFERENCES users(id)
 );
 
 CREATE TABLE ingredients(
     id SERIAL PRIMARY KEY,
     ingredient_name VARCHAR(255),
     ing_img_url VARCHAR(255),
+<<<<<<< HEAD
     ing_desc VARCHAR(255)
+=======
+    ing_desc VARCHAR(255), 
+>>>>>>> f0f82766255c20c2f7933e9ebeb183571ef72dd0
 );
 
 CREATE TABLE recipes(
     id SERIAL PRIMARY KEY, 
+    quantity VARCHAR(255),
+    --a recipe belongs to a meal
+    --a dinner has many recipes
     meal_id INTEGER REFERENCES meals(id),
+<<<<<<< HEAD
     ingredient_id INTEGER REFERENCES ingredients(id),
     quantity VARCHAR(64)
+=======
+    --a recipe belongs to an ingredient
+    --an ingredient has many recipes
+    ingredient_id INTEGER REFERENCES ingredients(id),   
+>>>>>>> f0f82766255c20c2f7933e9ebeb183571ef72dd0
 );
 
