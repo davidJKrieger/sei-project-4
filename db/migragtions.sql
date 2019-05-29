@@ -25,9 +25,11 @@ CREATE TABLE ingredients(
     meal_id INTEGER REFERENCES meals(id)
 );
 
-CREATE TABLE recipe(
+CREATE TABLE recipes(
     id SERIAL PRIMARY KEY, 
     meal_id INTEGER REFERENCES meals(id),
     ingredient_id INTEGER REFERENCES ingredients(id),
     quantity INTEGER REFERENCES ingredients(id)
 );
+
+
