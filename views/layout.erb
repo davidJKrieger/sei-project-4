@@ -1,16 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>What's For Dinner?</title>
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-</head>
-<body>
+`<header>
+    <nav>
+      <a href="/items">Item Index</a> | 
+      <a href="/items/new">Add a new Item</a>
+    </nav>
+
+    <nav>
+      <% if session[:logged_in] %>
+        Logged in as <%= session[:username] %>
+        <a href="/users/logout">Log out</a>
+      <% else %>
+        <a href="/users/login">Log in</a> | 
+        <a href="/users/register">Register</a>
+      <% end %>
+    </nav>
+
+  </header>
+
+  <% if session[:message] %>
+    <p class="message <%= session[:message][:status] %>"><%= session[:message][:message] %></p>
+  <% 
+    end
+    session[:message] = nil # so the user won't keep seeing an old message
+  %>
 
   <%= yield %>
 
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 63287849b2a6bb0642e2ec85085ab39f85f7c263
