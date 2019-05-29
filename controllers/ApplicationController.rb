@@ -21,9 +21,9 @@ class ApplicationController < Sinatra::Base
   get '/' do 
     erb :home
   
-   meals = Meal.all
-     @meals = meals
-      erb :meal_index
+    #  meals = Meal.all
+    #  @meals = meals
+    #   erb :meal_index
   end
      
 
