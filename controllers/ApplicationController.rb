@@ -19,8 +19,9 @@ class ApplicationController < Sinatra::Base
   # set :public_dir, File.expand_path('../../public', __FILE__)
 
   get '/' do 
+    erb :home
   
-    meals = Meal.all
+   meals = Meal.all
      @meals = meals
       erb :meal_index
   end
