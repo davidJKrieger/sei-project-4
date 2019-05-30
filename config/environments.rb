@@ -1,4 +1,4 @@
-configure :production,  :development 
+configure :production,  :development do 
 
 db = URI.pars(ENV['DATABASE_URL'] || 'postgress://localhost/whats_for_dinner' )
 
