@@ -5,9 +5,9 @@
    <%= ingredient.ingredient_name %>
 
            
-    <a href="/ingredients/<%= ingredient.id %>/edit"><button>Edit</button></a>
+    <a href="/ingredients/<%=ingredient.id%>/edit"><button>Edit</button></a>
     
-        <form action="/ingredients/<%= ingredient.id %>" method="POST">
+        <form action="/ingredients/<%=ingredient.id%>" method="POST">
             <input type="hidden" name="_method" value="DELETE">
             <button>Delete</button>
         </form>

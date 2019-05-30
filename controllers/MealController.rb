@@ -12,6 +12,12 @@ class MealController < ApplicationController
   get '/new' do
     erb :meal_new
   end
+    #destroy a meal
+  delete '/:id' do
+    meal = Meal.find params[:id]
+    meal.destroy
+    redirect '/meals'
+  end
 
   #POST #make a new meal
   post '/' do 
@@ -47,17 +53,4 @@ class MealController < ApplicationController
     redirect '/meals'
   end 
   #edit a meal
-  get '/:id' do
-    @meal = Meal.find params[:id]
-    erb :edit_meal
-
-  end
-
-  #destroy a meal
-  post '/:id/delete' do
-    meal = Meal.find params[:id]
-    meal.destroy
-    redirect '/meals'
-  end
-
 end
