@@ -1,13 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 body {
-  margin-top: 105px; 
-background-color: #fff}
+margin-top: 105px; 
+background-color:#fff;
+font-family: 'Lato', sans-serif;}
 
 .navbar {
-  box-shadow: 2px 2px 5px #3292a6;
+  box-shadow: 2px 2px 5px #fff;
   opacity: 0.9;
   background: #fff; }
   .navbar .nav-item {
     font-size: 1.4rem;
     padding-right: 1.4rem; }
+
+ .home-section-header{
+      position: absolute;
+      width: 1140;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+  }
+  .home-section h1{
+    letter-spacing: 1.5px;
+    font-size: 60px;
+
+  }
+  .register-btn{
+    color: #fff;
+    background-color: #f19f4d;
+  }
+ .home-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url(/images/home-section.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    }
+    .about{
+     
+      min-height: 300px;
+    }
+    .about-heading{
+      font-size: 55px;
+      letter-spacing: 1.2px
+    }
+    .about-paragrapgh{
+      font-size: 20px;
+      padding-top: 25px;
+      padding: 15px;
+      
+    }
+    h2:after {
+      display: block;
+      height: 5px;
+      background-color: #4484ce;
+      content: " ";
+      width: 200px;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+  .section-meals{
+    padding: 0;
+    margin-left: -100px;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover {
+    transform: scale(1.03);
+}
+
+  .values-header{
+    font-size: 55px;
+    letter-spacing: 1.2px
+  }
+
+  .values-paragraph{
+    font-size: 20px;
+    padding-top: 25px;
+    padding: 15px;
+  }
+
+  

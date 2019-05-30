@@ -29,8 +29,6 @@ class IngredientController < ApplicationController
         new_ing = Ingredient.new
     
         new_ing.name = params[:ingredient_name]
-        new_ing.img_url = params[:ing_img_url]
-        new_ing.img_desc = params[:ing_desc]
     
         new_ing.save
     end

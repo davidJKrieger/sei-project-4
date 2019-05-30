@@ -1,0 +1,8 @@
+<h2>Edit this Meal</h2>
+  <form action="/meals/<%= @meal.id %>" method="POST">
+    <input type="hidden" name="_method" value="PUT" />
+    <input type="text" name="content" value="<%= @meal.meal_name %>"/>
+    <input type="text" name="content" value="<%= @meal.meal_img_url %>"/>
+    <input type="text" name="content" value="<%= @meal.recipe_link_url %>"/>
+    <button>Update</button>
+  </form>
