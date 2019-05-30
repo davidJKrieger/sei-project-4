@@ -2,7 +2,12 @@ class ApplicationController < Sinatra::Base
   require 'bundler'
   Bundler.require()
 
+  
+  require './config/environments'
+
   enable :sessions
+
+  
 
 
   ActiveRecord::Base.establish_connection(
@@ -19,18 +24,9 @@ class ApplicationController < Sinatra::Base
   set :public_dir, File.expand_path('../../public', __FILE__)
 
   get '/' do 
-<<<<<<< HEAD
     erb :home
-  
-  
   end
  
-=======
-      erb :home
-  end
-     
-
->>>>>>> 92c43352f54093ffa48bbfbe8224da902979fb02
   get '/test' do
     some_text = "TEST 123"
     binding.pry 
