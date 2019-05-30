@@ -26,9 +26,9 @@ class MealController < ApplicationController
     newMeal.meal_name = params[:meal_name]
     newMeal.recipe_link_url = params[:recipe_link_url] 
     newMeal.meal_img_url = params[:meal_img_url]
-    newMeal.user_id = params[:user_id]
-
     newMeal.save
+
+    redirect '/meals'
   
   end
 

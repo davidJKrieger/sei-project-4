@@ -1,5 +1,5 @@
 <h2>Edit Ingredient</h2>
-  <form action="/items/<%= @ing.id %>" method="POST">
+  <form action="/ingredients/<%= @ing.id %>" method="POST">
     <input type="hidden" name="_method" value="PUT" />
     <input type="text" name="content" value="<%= @ing.ing_name %>"/>
     <input type="text" name="content" value="<%= @ing.ing_img_url %>"/>

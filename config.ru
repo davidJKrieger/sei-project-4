@@ -8,7 +8,11 @@ require './controllers/RecipeController'
 require './models/User'
 require './models/Meal'
 require './models/Ingredient'
+<<<<<<< HEAD
 require './models/Recipe'
+=======
+require './models/recipe'
+>>>>>>> 92c43352f54093ffa48bbfbe8224da902979fb02
 
 
 map ('/') {
@@ -25,4 +29,9 @@ map ('/ingredients') {
 }
 map ('/recipes') {
   run RecipeController
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 92c43352f54093ffa48bbfbe8224da902979fb02
