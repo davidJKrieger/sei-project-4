@@ -25,7 +25,7 @@ class IngredientController < ApplicationController
     
     #post ingredient
     post '/' do
-    
+
         new_ing = Ingredient.new
     
         new_ing.name = params[:ingredient_name]

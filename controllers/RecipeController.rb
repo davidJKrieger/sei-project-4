@@ -1,18 +1,4 @@
 class RecipeController < ApplicationController
-<<<<<<< HEAD
-
-  #index
-  #list all meals
-  get '/' do
-    @meals = Meal.all
-    erb :meal_index
-  end
-
-  #create
-  #new meal page
-  get '/new' do
-    erb :meal_new
-=======
    
   # before do
   #   puts "before filter is running"
@@ -40,7 +26,6 @@ class RecipeController < ApplicationController
   get '/:id/edit' do
     @recipe = Recipe.find params[:id]
     erb :recipe_edit
->>>>>>> 92c43352f54093ffa48bbfbe8224da902979fb02
   end
     #destroy a meal
   delete '/:id' do
@@ -52,39 +37,8 @@ class RecipeController < ApplicationController
   #POST #make a new meal
   post '/' do 
     newMeal = Meal.new
-
-<<<<<<< HEAD
-    newMeal.meal_name = params[:meal_name]
-    newMeal.recipe_link_url = params[:recipe_link_url] 
-    newMeal.meal_img_url = params[:meal_img_url]
-    newMeal.user_id = params[:user_id]
-
-    newMeal.save
-  
   end
 
-  #show one meal
-  get '/:id' do
-    @meal = Meal.find params[:id]
-    erb :meal_show
-  end
-  
-  #respond with edit page
-  get '/:id/edit' do
-    @meal = Meal.find params[:id]
-    erb :meal_edit
-  end
-  #Update Meal
-  put '/:id' do
-    meal = Meal.find params[:id]
-    meal.meal_name = params[:meal_name]
-    meal.meal_img_url = params[:meal_img_url]
-    meal.recipe_link_url = params[:recipe_link_url]
-    meal.save
-    redirect '/meals'
-  end 
-  #edit a meal
-=======
   # create
   post '/' do
     new_recipe = Recipe.new
@@ -152,5 +106,4 @@ class RecipeController < ApplicationController
 
 
 
->>>>>>> 92c43352f54093ffa48bbfbe8224da902979fb02
 end

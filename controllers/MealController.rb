@@ -28,7 +28,7 @@ class MealController < ApplicationController
     newMeal.meal_img_url = params[:meal_img_url]
     newMeal.save
 
-    redirect '/meals'
+    redirect '/.'
   
   end
 
