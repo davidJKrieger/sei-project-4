@@ -1,34 +1,26 @@
 class MealController < ApplicationController
 
+  #index
   #list all meals
   get '/' do
     @meals = Meal.all
     erb :meal_index
   end
 
+  #create
   #new meal page
   get '/new' do
     erb :meal_new
   end
-
-
-  #show one meal
-  get '/:id' do
-    @meal = Meal.find params[:id]
-    erb :meal_show
-  end
-  
-  #respond with edit page
-  get '/:id/edit' do
-
-    @ing = Ingredient.find params [:id]
-
-    erb :ing_edit
+    #destroy a meal
+  delete '/:id' do
+    meal = Meal.find params[:id]
+    meal.destroy
+    redirect '/meals'
   end
 
-  #make a new meal
+  #POST #make a new meal
   post '/' do 
-
     newMeal = Meal.new
 
     newMeal.meal_name = params[:meal_name]
@@ -40,18 +32,25 @@ class MealController < ApplicationController
   
   end
 
-  #edit a meal
-  put '/:id' do
+  #show one meal
+  get '/:id' do
     @meal = Meal.find params[:id]
-    erb :edit_meal
-
+    erb :meal_show
   end
-
-  #destroy a meal
-  post '/:id/delete' do
+  
+  #respond with edit page
+  get '/:id/edit' do
+    @meal = Meal.find params[:id]
+    erb :meal_edit
+  end
+  #Update Meal
+  put '/:id' do
     meal = Meal.find params[:id]
-    meal.destroy
+    meal.meal_name = params[:meal_name]
+    meal.meal_img_url = params[:meal_img_url]
+    meal.recipe_link_url = params[:recipe_link_url]
+    meal.save
     redirect '/meals'
-  end
-
+  end 
+  #edit a meal
 end

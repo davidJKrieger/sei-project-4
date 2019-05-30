@@ -2,12 +2,12 @@
 <ul>
 <% @meals.each do |meal| %>
    <li>
-   <%= meal %>
+   <%= meal.meal_name %>
         <form action="/meals/<%= meal.id %>/edit">
             
             <button>Edit</button>
         </form>
-        <form action="/meals/<%= meal.id %>" method="POST">
+        <form action="/meals/<%=meal.id%>" method="POST">
             <input type="hidden" name="_method" value="DELETE">
             <button>Delete</button>
         </form>
