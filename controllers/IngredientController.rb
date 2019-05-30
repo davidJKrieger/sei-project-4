@@ -31,6 +31,8 @@ class IngredientController < ApplicationController
         new_ing.name = params[:ingredient_name]
     
         new_ing.save
+
+        redirect '/ingredients'
     end
     
     #edit an ingredient
