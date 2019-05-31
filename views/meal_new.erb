@@ -1,7 +1,15 @@
+
+<div class="containter text-center">
+
+
 <h1>Add a Dinner</h1>
-  <form action="/meals" method="POST">
-    <input type="text" name="meal_name"/>
-    <input type="text" name="meal_img_url"/>
-    <input type="text" name="meal_recipe_url"/>
-    <button>Create</button>
+  <div class="form-group">
+  <form class="form-control" action="/meals" method="POST">
+  Name: <input type="text" name="meal_name"/>
+    <%# <input type="text" name="meal_img_url"/>
+    <input type="text" name="meal_recipe_url"/> %>
+    <br>
+    <button class="btn btn-primary mt-2">Create</button>
   </form>
+
+  

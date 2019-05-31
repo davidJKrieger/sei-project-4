@@ -3,7 +3,7 @@ require './controllers/ApplicationController'
 require './controllers/UserController'
 require './controllers/MealController'
 require './controllers/IngredientController'
-require './controllers/RecipeController'
+# require './controllers/RecipeController'
 
 require './models/User'
 require './models/Meal'
@@ -23,6 +23,6 @@ map ('/meals') {
 map ('/ingredients') {
   run IngredientController
 }
-map ('/recipes') {
-  run RecipeController
-}
+# map ('/recipes') {
+#   run RecipeController
+# }

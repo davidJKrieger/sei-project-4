@@ -1,8 +1,17 @@
-<h2>Edit this Meal</h2>
+
+<div class="container">
+<div class="card text-center">
+<h1>Edit this Meal</h1>
+
   <form action="/meals/<%= @meal.id %>" method="POST">
+  <div class="form-group">
     <input type="hidden" name="_method" value="PUT" />
-    <input type="text" name="content" value="<%= @meal.meal_name %>"/>
-    <input type="text" name="content" value="<%= @meal.meal_img_url %>"/>
-    <input type="text" name="content" value="<%= @meal.recipe_link_url %>"/>
-    <button>Update</button>
+    Name:<input class="form-control" type="text" name="content" value="<%= @meal.meal_name %>"/>
+    <%# <input type="text" name="content" value="<%= @meal.meal_img_url %>
+    <%# <input type="text" name="content" value="<%= @meal.recipe_link_url %>
+    <button class="btn btn-primary mt-3">Update</button>
+    </div>
   </form>
+
+  </div>
+  </div>
