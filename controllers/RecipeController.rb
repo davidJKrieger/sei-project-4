@@ -44,6 +44,7 @@ class RecipeController < ApplicationController
     newMeal.user_id = params[:user_id]
 
     newMeal.save
+    redirect '/meals'
   
   end
 
