@@ -21,39 +21,38 @@ class IngredientController < ApplicationController
     end
     
     #add an ingredient
+    get '/new' do
+    erb :ingredient_new
+    end
 
     
     #post ingredient
-    post '/' do
+  #POST #make a new meal
+  post '/' do 
+    newIng = Ingredient.new
 
-        new_ing = Ingredient.new
-    
-        new_ing.name = params[:ingredient_name]
-    
-        new_ing.save
+    newIng.ingredient_name = params[:ingredient_name]
+    newIng.save
 
-        redirect '/ingredients'
-    end
-    
+    redirect '/ingredients'
+  
+  end
+ 
     #edit an ingredient
     get '/:id/edit' do
     
-        @ing = Ingredient.find params [:id]
+        @ing = Ingredient.find params[:id]
     
         erb :ing_edit
     end
     
     #update
     put '/:id' do
-    
-        ing = Ingredient.find params[:id]
-    
-        ing.name = params[:name]
-        ing.img_url = params[:img_url]
-        ing.img_desc = params[:img_desc]
-    
-        ing.save
-    
+
+    ingredient = Ingredient.find params[:id]
+    ingredient.ingredient_name = params[:ingredient_name]
+    ingredient.save
+
         redirect '/ingredients'
     end
     

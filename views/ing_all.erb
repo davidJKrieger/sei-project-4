@@ -57,29 +57,17 @@ body {
 
 
 <h1 class="text-center py-3">Here is a list of all of the Ingredients</h1>
-<a class="new"href="/ingredients/new">Add a new Ingredient</a>
+<a class="new" href="/ingredients/new">Add a new Ingredient</a>
 
 <ul>
 <% @ing.each do |ingredient| %>
-<<<<<<< HEAD
-<div class="card tex-center">
-   <li class="text-center">
-   <%= ingredient %>
-        <form action="/ingredients/<%= ingredient.id %>/edit">
-            
-            <button class="btn btn-success btn-small mt-3 py-2 px-2">Edit</button>
-        </form>
-
-      <form action="/ingredients/<%= ingredient.id %>" method="POST">
-=======
    <li>
-   <%= ingredient.ingredient_name %>
+   <%=ingredient.ingredient_name%>
 
            
     <a href="/ingredients/<%=ingredient.id%>/edit"><button>Edit</button></a>
     
         <form action="/ingredients/<%=ingredient.id%>" method="POST">
->>>>>>> 92c43352f54093ffa48bbfbe8224da902979fb02
             <input type="hidden" name="_method" value="DELETE">
             <button class="btn btn-danger btn-small my-3 px-2">Delete</button>
         </form>
