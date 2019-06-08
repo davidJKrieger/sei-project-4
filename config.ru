@@ -23,6 +23,4 @@ map ('/meals') {
 map ('/ingredients') {
   run IngredientController
 }
-# map ('/recipes') {
-#   run RecipeController
-# }
+

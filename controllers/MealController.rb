@@ -22,6 +22,9 @@ class MealController < ApplicationController
   #POST #make a new meal
   post '/' do 
     newMeal = Meal.new
+   
+
+
 
     newMeal.meal_name = params[:meal_name]
     newMeal.recipe_link_url = params[:recipe_link_url] 

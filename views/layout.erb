@@ -12,7 +12,7 @@
 
 <header>
 
-<nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top py-4" id="main-nav">
     <div class="container">
       <a href="/" class="navbar-brand">
         
@@ -24,11 +24,9 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
          
+         
           <li class="nav-item">
-            <a href="/meals" class="nav-link">Dinners</a>
-          </li>
-          <li class="nav-item">
-            <a href="/ingredients" class="nav-link">Ingredients</a>
+            <a href="/users/register" class="nav-link">Register</a>
           </li>
           <li class="nav-item">
             <a href="/users/login" class="nav-link">login</a>
@@ -42,23 +40,7 @@
 
 
 
-    <%# <nav>
-      <a href="/items">Item Index</a> | 
-      <a href="/items/new">Add a new Item</a>
-    </nav> %>
 
-    <%# <nav>
-      <% if session[:logged_in] %>
-        <%# Logged in as <%= session[:username] %>
-        <%# <a href="/users/logout">Log out</a> %>
-      <%# <% else %> 
-        <%# <a href="/users/login">Log in</a> | 
-        <a href="/users/register">Register</a> %>
-      <%# <% end %>
-    <%# </nav> %> 
-
-  </header>
-  <div class= containter>
 
   <% if session[:message] %>
     <p class="message <%= session[:message][:status] %>"><%= session[:message][:message] %></p>
